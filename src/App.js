@@ -41,7 +41,6 @@ const App = () => {
             .then(async (res) => {
                 const path = res.path();
                 console.log('Downloaded file path:', path);
-                const dest_path = `${RNFS.DownloadDirectoryPath}/${path.split('/').pop()}`;
             })
             .catch(err => {
                 console.error('Download error:', err);
